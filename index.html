@@ -23,26 +23,27 @@
     width: 180px;
     height: 180px;
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 40px;
     border-radius: 30px;
 }
   h1 {
-    line-height: 200px;
     position: relative;
-    top: 20px;
+    top: 60px;
     left: 100px;
   }
   main {
     font-family: Calibri;
-    text-align: center;
+    text-align: left;
     border-color: #c4c4c4;
     border-radius: 10px;
     border-style: dashed;
     border-width: thin;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
+    padding-left: 20px;
   }
   footer {
     text-align: center;
@@ -51,7 +52,15 @@
     position: fixed;
     bottom: 0;
     margin-top: 100px;
+    color: #c4c4c4;
   }
+  .line-separator {
+    height: 2px;
+    background: #717171;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    }
 </style>
 <header>
   <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALUAAAAJDg2MzFiM2M2LTcxZjktNGNhMS1iOWRiLTMzMGI4OGMxZjVlNQ.jpg">
@@ -67,8 +76,11 @@
     Homework Assignments:
   </p2>
   <ul>
-    <li><a href= "week1/homework/index.html">Whales</a></li>
-    <li>ACME Corp</li>
+    <li><a href= "week1/homework/index.html">Week 1: Whales</a></li>
+    <li>Week 2: ACME Corp</li>
   </ul>
 </main>
-<footer>Coding Strong</footer>
+<footer>
+  <div class="line-separator"></div>
+  Coding Strong
+</footer>

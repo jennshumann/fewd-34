@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <title>JAVA practicee</title>
+  <style media="screen">
+  header {
+    font-family: Lucida;
+    font-size: 12pt;
+  }
+  </style>
+</head>
+<main>
+  <header>
+    Java Greeting
+  </header>
+</main>

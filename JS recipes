@@ -1,0 +1,35 @@
+<script>
+
+//JS Recipes
+
+//Adding/changing an element's value
+
+//if the element is already on the page
+  var el = document.querySelector("img");
+  el.setAttribute("src", "http://")
+
+//if the element is Not on the page (new el):
+var el = document.createElement("p");
+el.textContent = "The quick brown fox...";
+
+//Adding an element to the page with text content
+var el = document.createElement ("li");
+el.textContent = "Go grocery shopping...";
+var parentEl = document.querySelector("ul");
+parentEl.appendChild(el);
+
+var name = "li";
+var text = "Go grocery shopping...";
+var parent = "ul";
+
+var el = document.createElement(name);
+el.textContent = text;
+var parentEl = document.querySelector(parent);
+parentEl.appendChild(el);
+
+function addElement(name, parent, text) {
+  var el = document.createElement(name);
+  el.textContent = text;
+  var parentEl = document.querySelector(parent);
+  parentEl.appendChild(el);
+} 

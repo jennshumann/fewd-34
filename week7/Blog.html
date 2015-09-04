@@ -90,8 +90,9 @@
       </div>
 
       <ul class="comments">
+
         <!--
-        <div class="comment">
+        <div class =""<div class="comment">
           You're looking good!
         </div>
         -->
@@ -117,14 +118,16 @@
       var commentAdded = document.querySelector("button")
       commentAdded.addEventListener("click", addComment)
 
-      function addComment() {
-        var newText = document.querySelector("#new-comment-body").textContent;
-        var newPoint = document.createElement("li");
-        newText = newPoint.textContent
-        var listed = document.querySelector(".comments")
+      function addComment(event) {
+        event.preventDefault()
+        var newText = document.querySelector("#new-comment-body").value;
+        var newPoint = document.createElement("div");
+        newPoint.textContent = newText;
+        newPoint.classList.toggle("comment")
+
+        var listed = document.querySelector(".comments");
         listed.appendChild(newPoint)
       }
-
     </script>
   </body>
 </html>

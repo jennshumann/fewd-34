@@ -89,13 +89,12 @@
 
     }
 
-    function loop(event){
-      event.preventDefault();
-      movies.forEach(displayMovie)
+    function loop(){
+      movies.forEach(displayMovie);
     }
 
-    var newNew = document.querySelector("#list-movies")
-    newNew.addEventListener("click", loop)
+    var newNew = document.querySelector("#list-movies");
+    newNew.addEventListener("click", loop);
 
     </script>
   </body>

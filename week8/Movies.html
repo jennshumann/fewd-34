@@ -71,26 +71,32 @@
     function displayMovie(){
       var divMovie = document.querySelector("#movies");
       var item = document.createElement("li");
-      divMovie.appendChild(item)
+      divMovie.appendChild(item);
 
-      var photo = document.createElement("img")
-      photo.setAttribute("src", movies[0].image)
-      item.appendChild(photo)
+      var photo = document.createElement("img");
+      photo.setAttribute("src", movies.image);
+      item.appendChild(photo);
 
-      var movieTitle = document.createElement("div")
-      movieTitle.classList.add("movie-title")
-      movieTitle.textContent = movies[0].title
-      item.appendChild(movieTitle)
+      var movieTitle = document.createElement("div");
+      movieTitle.classList.add("movie-title");
+      movieTitle.textContent = movies.title;
+      item.appendChild(movieTitle);
 
-      var movieRelease = document.createElement("div")
-      movieRelease.classList.add("movie-release-date")
-      movieRelease.textContent = movies[0].releaseDate
-      item.appendChild(movieRelease)
+      var movieRelease = document.createElement("div");
+      movieRelease.classList.add("movie-release-date");
+      movieRelease.textContent = movies.releaseDate;
+      item.appendChild(movieRelease);
 
     }
-    // movies.forEach(displayMovie)
-    document.querySelector("#list-movies").addEventListener("click", displayMovie)
-    
+
+    function loop(event){
+      event.preventDefault();
+      movies.forEach(displayMovie)
+    }
+
+    var newNew = document.querySelector("#list-movies")
+    newNew.addEventListener("click", loop)
+
     </script>
   </body>
 </html>

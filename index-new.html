@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
   <style media="screen">
   #block {
     font-family: Oswald, arial black;
@@ -66,9 +64,13 @@
       margin-left: auto;
       margin-right: auto;
     }
+    #links:hover {
+      color: rgb(255, 248, 80)
+    }
 
     h3 {
       text-align: center;
+      text-decoration: none;
     }
     footer {
       font-family: Oswald, arial black;
@@ -93,8 +95,7 @@
 
     }
   </style>
-  <title></title>
-</head>
+  </head>
 <body>
   <header>
     <div id="block">Jennifer Shuman Chang</div>
@@ -148,7 +149,7 @@
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/circle.jpg" alt="placeholder" />
-        <h3><a href="index.html" target="_blank">GA FEWD Course</a></h3>
+        <h3 id="links"><a href="index.html" target="_blank">GA FEWD Course</a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>

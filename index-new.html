@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jennifer Chang</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <style media="screen">
+    #block {
+      font-family: Oswald, arial black;
+      font-size: 20px;
+      height: 100px;
+      padding-top: 50px;
+      padding-left: 10px;
+    }
+    #banner {
+      background-image: url(./image/home-banner.jpg);
+      background-size: contain;
+      height: 250px;
+      width: 1120px;
+      min-width: 1128px;
+      max-height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*main {
+      height:900px;
+      min-width: 1180px;
+    }*/
+
+    .flyStart {
+      margin-left: 10px;
+    }
+    .flyTo {
+      margin-left: 1020px;
+      animation: flyTo 5s;
+      animation-fill-mode: forwards;
+    }
+    /*unsure*/
+    @-webkit-keyframes flyTo {
+      0% { top: 25px; left; 25px; }
+      25% { top: 100px; left: 50px;  }
+      100% { top: 100px; left: 500px; }
+    }
+
+    #quote {
+      font-family: Oswald, arial black;
+      font-style: italic;
+      padding-left: 800px;
+      padding-top: 10px;
+    }
+
+    #destination {
+      text-align: center;
+      border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 250px;
+      margin-bottom: 50px;
+    }
+    .heading {
+      font-family: Oswald, arial black;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 10px;
+
+    }
+    .container {
+      font-family: Oswald, arial black;
+      margin-top: 10px;
+    }
+    .row {
+      padding-top: 50px;
+    }
+    #cover {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3 {
+      text-align: center;
+    }
+    footer {
+      font-family: Oswald, arial black;
+      text-align: center;
+      min-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 50px;
+    }
+    .line-separator{
+      background: #c4c4c4;
+      height: 2px;
+      width: 800px;
+      margin-left: 180px;
+      min-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #social {
+      padding-left: 7px;
+
+    }
+  </style>
+  <title></title>
+</head>
+<body>
+  <header>
+    <div id="block">Jennifer Shuman Chang</div>
+  </header>
+  <div id="banner">
+  </div>
+  <main>
+    <div id="quote">
+      "Just when the catepillar thought the world was over, it turned into a butterfly..."
+    </div>
+  <div class="container">
+    <div class="heading">
+      Professional Work
+    </div>
+
+    <div class="row" id="rowOne">
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>Resume</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>Portfolio</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>Freelance</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+    <div class="heading">
+      Where the fun things are
+    </div>
+    <div class="row" id="rowTwo">
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>Jetset</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <img id="cover" src="./image/circle.jpg" alt="placeholder" />
+        <h3>GA FEWD Course</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </main>
+</body>
+<footer>
+  <div class="line-separator"></div>
+  <p>Connect with Jennifer</p>
+  <div>
+    <a href="https://www.linkedin.com/in/jennifershumanchang" target="_blank">
+      <img title="linkedin" src="./image/linkedin.png" alt="linkedin" width="35" height="35"></a>
+    <a href="https://www.facebook.com/jennifer.shumann" target="_blank">
+      <img id="social" title="Facebook" src="./image/facebook.png" alt="Facebook" width="40" height="35"></a>
+    <a href="https://instagram.com/jennifershumann" target="_blank">
+      <img id="social" title="Instagram" src="./image/instagram.png" alt="Instagram" width="40" height="35"></a>
+    <a href="mailto:jshumann@me.com">
+      <img id="social" title="Email" src="./image/email.png" alt="Email" width="40" height="35"></a>
+</footer>
+</html>

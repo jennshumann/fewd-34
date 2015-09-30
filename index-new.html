@@ -14,9 +14,8 @@
     height: 100px;
     width: 1120px;
     min-width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-left: 20px;
   }
   #banner {
     background-image: url(./image/home-banner.jpg);
@@ -92,13 +91,125 @@
     }
     #social {
       padding-left: 7px;
+    }
+    .menu-wrap {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1120px;
+      max-width: 1120px;
+      min-width: 1120px;
+    }
+    .menu {
+      display: inline;
+      font-family: oswald, arial black;
+      font-size: 8px;
+    }
+    .menu a {
+      transition:all linear 0.15s;
+      color:#919191;
+      }
 
+    .menu li:hover > a, .menu .current-item > a {
+        text-decoration:none;
+        color:#e77e94;
+      }
+
+    .menu .arrow {
+      font-size:8px;
+      line-height:0%;
+    }
+    .menu > ul > li {
+    float:right;
+    display:inline-block;
+    position:relative;
+    font-size:12px;
+    }
+
+    .menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    }
+
+    .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#f4f4f4;
+    border-radius: 10px;
+    }
+
+    /*bottom layer code*/
+    .menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+    }
+
+    .sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0.2;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#ffffff;
+    border-radius: 10px;
+    width: auto;
+    }
+
+    .sub-menu li {
+    display:block;
+    font-size:12px;
+    }
+
+    .sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    }
+
+    .sub-menu li a:hover, .sub-menu .current-item a {
+    background:#fafafa;
+    }
+
+    #professional {
+      width: 107px;
+      padding-left: 25px;
+    }
+    .col-sm-4 h3 a {
+      color: inherit;
+    }
+    .col-sm-4 h3 a:hover {
+      color: rgb(227, 213, 32);
     }
   </style>
   </head>
 <body>
   <header>
-    <div id="block">Jennifer Shuman Chang</div>
+    <div class="menu-wrap">
+      <nav class="menu">
+      <ul class="clearfix">
+        <li id="block">Jennifer Shuman Chang</li>
+          <li>
+            <a href="#">Fun<span class="arrow">&#9660;</span></a>
+
+            <ul class="sub-menu">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Jetset</a></li>
+                <li><a href="#">GA FEWD Course</a></li>
+            </ul>
+          </li>
+          <li>
+              <a id="professional" href="#">Professional<span class="arrow">&#9660;</span></a>
+
+              <ul class="sub-menu">
+                  <li><a href="#">Resume</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Freelance</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Home</a></li>
+  </nav>
+  </div>
     <div id="banner">
       <div id="quote">
       "Just when the catepillar thought the world was over, it turned into a butterfly..."
@@ -143,7 +254,7 @@
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/circle.jpg" alt="placeholder" />
-        <h3>Jetset</h3>
+        <h3><a href="final/new.html">Jetset</a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>

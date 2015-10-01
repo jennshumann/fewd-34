@@ -28,25 +28,30 @@
         margin-left: auto;
         margin-right: auto;
       }
-      /*main {
-        height:900px;
-        min-width: 1180px;
-      }*/
 
       .flyStart {
-        margin-left: 10px;
+        /*margin-left: 10px;*/
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
       }
-      .flyTo {
+
+      /*.flyTo {
         margin-left: 830px;
         animation: flyTo 5s;
         animation-fill-mode: forwards;
-      }
+      }*/
       /*unsure*/
-      @-webkit-keyframes flyTo {
-        0% { top: 25px; left; 25px; }
-        25% { top: 100px; left: 50px;  }
-        100% { top: 100px; left: 500px; }
-      }
+      @keyframes slidein {
+        from {
+          margin-left: 2%;
+          width: 100%;
+          }
+        to {
+          margin-left: 97%;
+          width: 30%;
+          }
+        }
 
       #quote {
         font-family: Oswald, arial black;
@@ -63,6 +68,7 @@
         margin-top: 50px;
         margin-bottom: 50px;
       }
+
       .heading {
         font-family: Oswald, arial black;
         font-size: 30px;
@@ -241,7 +247,7 @@
       "Not all those who wander are lost." - J.R.R Tolkien
       </div>
       <div class="flyStart">
-          <img src="airplane.png" alt="plane" width="5%"/>
+          <img src="airplane2.jpg" alt="plane" width="10%"/>
       </div>
     </div>
     </header>
@@ -359,30 +365,40 @@
         <img id="social" title="Email" src="../image/email.png" alt="Email" width="40" height="35"></a>
   </footer>
 </html>
+<script src="airportarray.js" type="text/javascript"></script>
 <script type="text/javascript">
-  window.addEventListener("load", function flying(){
-  var fly = document.querySelector(".flyStart");
-  fly.classList.remove("flyStart");
-  fly.classList.add("flyTo");
-  })
+  // window.addEventListener("load", function flying(){
+  // var fly = document.querySelector(".flyStart");
+  // fly.classList.remove("flyStart");
+  // fly.classList.add("flyTo");
+  // })
 
   var a = document.querySelector(".search");
-  a.addEventListener("click", skySearch);
+  a.addEventListener("submit", skySearch);
 
   function skySearch(){
+    //1. Grab city value
     var x = document.querySelector("#destinationFrom").value;
     var y = document.querySelector("#destinationTo").value;
-    //For Airport Code API
-    //1. Grab city value
-    //2. Runs through Sabre API
-    //3. Finds Airport code
-    //4. returns Airport Code
-    //5. Added to URL
-    // GET /ru51tvxsa3tizexv:DEVCENTER:EXT/lists/supported/cities/{city}/airports/
-    var url = "http://www.skyscanner.com/transport/flights/" + x +"/" + y;
-    window.open(url);
-  }
-  //For Airport Code API
 
+
+    //2. Pass through Airportarray.html
+    //3. Finds Airport code
+    airportCodes.forEach(function(airportCode){
+      if (x == airportCodes[0]["name"]{
+      var c = airportCodes[0]["iata"]
+    }
+    });
+
+    airportCodes.forEach(function(airportCode){
+      if (y == airportCodes[0]["name"]{
+      var d = airportCodes[0]["iata"]
+    }
+    });
+
+    //5. Added to URL
+    var url = "http://www.skyscanner.com/transport/flights/" + c +"/" + d;
+    window.open(url);
+    }
 
 </script>

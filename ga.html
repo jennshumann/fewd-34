@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JC GA-FEWD 34</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </head>
+<style>
+  main {
+    font-family: Oswald, Arial black;
+    text-align: left;
+    border-color: rgba(120, 120, 120, 0.26);
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-left: 20px;
+  }
+  .hw {
+    list-style-type: circle;
+  }
+
+  ul.hw > li {
+    line-height: 40px;
+    color: rgb(91, 91, 91);
+  }
+  ul.hw > li a:hover {
+    background-color: #CCC;
+    border-radius: 5px;
+    color: white;
+  }
+  footer {
+    text-align: center;
+    font-family: Calibri;
+    text-align: center
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+    color: #c4c4c4;
+  }
+  .line-separator {
+    height: 2px;
+    background: #717171;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+/*
+    TOP HEADER*/
+    #block {
+      font-family: Oswald, arial black;
+      font-size: 20px;
+      height: 100px;
+      width: 1120px;
+      min-width: 1128px;
+      padding-top: 100px;
+      padding-left: 20px;
+    }
+    #banner {
+      background-image: url(./image/home-banner.jpg);
+      background-size: contain;
+      height: 250px;
+      width: 1120px;
+      max-width: 1120px;
+      min-width: 1120px;
+      max-height: 249px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      .menu-wrap {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1120px;
+        height: 137px;
+        max-width: 1120px;
+        min-width: 1120px;
+      }
+      .menu {
+        display: inline;
+        font-family: oswald, arial black;
+        font-size: 8px;
+      }
+      .menu a {
+        transition:all linear 0.15s;
+        color:#919191;
+        }
+
+      .menu li:hover > a, .menu .current-item > a {
+          text-decoration:none;
+          color:#e77e94;
+        }
+
+      .menu .arrow {
+        font-size:8px;
+        line-height:0%;
+      }
+      .menu > ul > li {
+      float:right;
+      display:inline-block;
+      position:relative;
+      font-size:12px;
+      }
+
+      .menu > ul > li > a {
+      padding:10px 40px;
+      display:inline-block;
+      text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+      }
+
+      .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+      background:#f4f4f4;
+      border-radius: 10px;
+      }
+
+      /*bottom layer code*/
+      .menu li:hover .sub-menu {
+      z-index:1;
+      opacity:1;
+      }
+
+      .sub-menu {
+      width:160%;
+      padding:5px 0px;
+      position:absolute;
+      top:100%;
+      left:0px;
+      z-index:-1;
+      opacity:0.2;
+      transition:opacity linear 0.15s;
+      box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+      background:#ffffff;
+      border-radius: 10px;
+      width: auto;
+      }
+
+      .sub-menu li {
+      display:block;
+      font-size:12px;
+      }
+
+      .sub-menu li a {
+      padding:10px 30px;
+      display:block;
+      }
+
+      .sub-menu li a:hover, .sub-menu .current-item a {
+      background:#fafafa;
+      }
+
+      #professional {
+        width: 107px;
+        padding-left: 25px;
+      }
+</style>
+<body>
+  <header>
+    <div class="menu-wrap">
+      <nav class="menu">
+      <ul class="clearfix">
+        <li id="block">Jennifer Shuman Chang</li>
+          <li>
+            <a href="#">Fun<span class="arrow">&#9660;</span></a>
+
+            <ul class="sub-menu">
+                <li><a href="#">About Me</a></li>
+                <li><a href="jetset/index.html">Jetset</a></li>
+                <li><a href="ga.html">GA FEWD Course</a></li>
+            </ul>
+          </li>
+          <li>
+              <a id="professional" href="#">Professional<span class="arrow">&#9660;</span></a>
+
+              <ul class="sub-menu">
+                  <li><a href="#">Resume</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Freelance</a></li>
+              </ul>
+          </li>
+          <li><a href="index.html">Home</a></li>
+  </nav>
+  </div>
+    <div id="banner">
+    </div>
+  </header>
+<main>
+  <h2>
+    General Assembly Front-End Web Development
+  </h2>
+  <p2>
+    Homework Assignments:
+  </p2>
+  <ul class="hw">
+    <li><a href= "week1/homework/index.html">Week 1: Whales</a></li>
+    <li><a href= "week2/homework/index.html">Week 2+3: ACME Corp</a></li>
+    <li><a href= "week4/homework/index.html">Week 4: JavaScript Calculator</a></li>
+    <li><a href="dom-manipulation.html">Week 5: DOM Manipulation</a></li>
+    <li><a href= "DIYCalc.html">Week 6: DIY Calculator Practice</a></li>
+    <li><a href= "week7/Blog.html">Week 7: Blog</a></li>
+    <li><a href= "week8/Movies.html">Week 8: Movies</a></li>
+      </ul>
+</main>
+</body>
+<footer>
+  <div class="line-separator"></div>
+  Coding Strong
+</footer>
+</html>

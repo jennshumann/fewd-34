@@ -1,0 +1,50 @@
+<div class="box start">
+</div>
+<button>Move</button>
+
+<script type="text/javascript">
+document.querySelector("button").addEventListener("click", function(e){
+  var box = document.querySelector(".box");
+  // box.classList.remove("start");
+  // box.classList.add("end");
+
+  // box.classList.toggle("start");
+  // box.classList.toggle("end");
+
+  box.classList.add("fancy-move");
+  })
+
+</script>
+
+<style media="screen">
+  .box {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    position: absolute;
+    transition: left 300ms, top 600ms;
+  }
+
+  .fancy-move {
+    animation: fancy-move 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .box.start {
+    top: 50;
+    left: 0;
+  }
+
+  .box.end{
+    top: 90px;
+    left: 500px;
+  }
+
+@-webkit-keyframes fancy-move{
+  0% { top: 25px; left; 25px; }
+  25% { top: 100px; left: 50px;  }
+  100% { top: 100px; left: 500px; }
+}
+
+</style>

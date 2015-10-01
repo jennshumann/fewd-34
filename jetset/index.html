@@ -36,12 +36,6 @@
         animation-fill-mode: forwards;
       }
 
-      /*.flyTo {
-        margin-left: 830px;
-        animation: flyTo 5s;
-        animation-fill-mode: forwards;
-      }*/
-      /*unsure*/
       @keyframes slidein {
         from {
           margin-left: 2%;
@@ -365,7 +359,7 @@
         <img id="social" title="Email" src="../image/email.png" alt="Email" width="40" height="35"></a>
   </footer>
 </html>
-<script src="airportarray.js" type="text/javascript"></script>
+<!-- <script src="airportarray.js" type="text/javascript"></script> -->
 <script type="text/javascript">
   // window.addEventListener("load", function flying(){
   // var fly = document.querySelector(".flyStart");
@@ -373,32 +367,43 @@
   // fly.classList.add("flyTo");
   // })
 
-  var a = document.querySelector(".search");
-  a.addEventListener("submit", skySearch);
+    var a = document.querySelector(".search");
+    a.addEventListener("click", skySearch);
 
-  function skySearch(){
+    function skySearch(){
     //1. Grab city value
     var x = document.querySelector("#destinationFrom").value;
     var y = document.querySelector("#destinationTo").value;
 
+    var airportCodes = [
+      { "iata": "JIL",
+        "lon": "126.65",
+        "iso": "CN",
+        "status": 1,
+        "name": "Jilin Airport",
+        "continent": "AS",
+        "type": "airport",
+        "lat": "43.86667",
+        "size": "small"
+        }
+
+      airportCodes.forEach(run)
+      ]};
 
     //2. Pass through Airportarray.html
     //3. Finds Airport code
-    airportCodes.forEach(function(airportCode){
-      if (x == airportCodes[0]["name"]{
-      var c = airportCodes[0]["iata"]
-    }
-    });
 
-    airportCodes.forEach(function(airportCode){
-      if (y == airportCodes[0]["name"]{
-      var d = airportCodes[0]["iata"]
-    }
-    });
+    function run(){
+      if (x == airportCodes["codes"][0]["name"]){
+      var c = airportCodes["codes"][0]["iata"]}
+
+      if (y == airportCodes["codes"][0]["name"]){
+      var d = airportCodes["codes"][0]["name"]}
 
     //5. Added to URL
     var url = "http://www.skyscanner.com/transport/flights/" + c +"/" + d;
-    window.open(url);
-    }
+    window.open(url)
+    };
+
 
 </script>

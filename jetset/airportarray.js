@@ -1,6 +1,5 @@
-<script>
-  var airportCodes = {
-    "codes:" [
+  var airportCodes =
+    [
     {
         "iata": "UTK",
         "lon": "169.86667",
@@ -73225,5 +73224,4 @@
         "lat": "42.885662",
         "size": "medium"
     }
-  ]};
-</script>
+  ];

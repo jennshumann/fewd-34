@@ -364,51 +364,43 @@
         <img id="social" title="Email" src="../image/email.png" alt="Email" width="40" height="35"></a>
   </footer>
 </html>
-<!-- <script src="airportarray.js" type="text/javascript"></script> -->
+<script src="airportarray.js" type="text/javascript"></script>
 <script type="text/javascript">
   // window.addEventListener("load", function flying(){
   // var fly = document.querySelector(".flyStart");
   // fly.classList.remove("flyStart");
   // fly.classList.add("flyTo");
   // })
+  var x = document.querySelector("#destinationFrom").value;
+  var y = document.querySelector("#destinationTo").value;
 
     var a = document.querySelector(".search");
     a.addEventListener("click", skySearch);
 
+
     function skySearch(){
     //1. Grab city value
-    var x = document.querySelector("#destinationFrom").value;
-    var y = document.querySelector("#destinationTo").value;
 
-    var airportCodes = [
-      { "iata": "JIL",
-        "lon": "126.65",
-        "iso": "CN",
-        "status": 1,
-        "name": "Jilin Airport",
-        "continent": "AS",
-        "type": "airport",
-        "lat": "43.86667",
-        "size": "small"
-        }
-
-      airportCodes.forEach(run)
-      ]};
+      airportCodes.forEach(run);
+    }
 
     //2. Pass through Airportarray.html
     //3. Finds Airport code
 
     function run(){
-      if (x == airportCodes["codes"][0]["name"]){
-      var c = airportCodes["codes"][0]["iata"]}
+      if (x === airportCodes[0]["name"]){
+      var c = airportCodes[0]["iata"]}
+      else { var c = ("SFO")
+      }
 
-      if (y == airportCodes["codes"][0]["name"]){
-      var d = airportCodes["codes"][0]["name"]}
+      if (y === airportCodes[0]["name"]){
+      var d = airportCodes[0]["iata"]}
+      else { var d = ("CDG")
+      }
 
     //5. Added to URL
     var url = "http://www.skyscanner.com/transport/flights/" + c +"/" + d;
     window.open(url)
     };
-
 
 </script>

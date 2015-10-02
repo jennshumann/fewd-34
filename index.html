@@ -8,8 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <style media="screen">
-  #block {
+  * {
     font-family: Oswald, arial black;
+  }
+  #block {
     font-size: 20px;
     height: 100px;
     width: 1120px;
@@ -30,12 +32,12 @@
     }
 
     #quote {
-    font-family: Oswald, arial black;
     font-style: italic;
     font-size: 12px;
     padding-left: 915px;
     padding-top: 250px;
     }
+
     #destination {
       text-align: center;
       border-radius: 3px;
@@ -44,54 +46,54 @@
       margin-top: 250px;
       margin-bottom: 50px;
     }
+
     .heading {
-      font-family: Oswald, arial black;
       font-size: 30px;
       text-align: center;
       padding-top: 50px;
       padding-bottom: 10px;
     }
+
     .container {
-      font-family: Oswald, arial black;
       margin-top: 10px;
     }
+
     .row {
       padding-top: 50px;
     }
+
     #cover {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+
     #links:hover {
       color: rgb(255, 248, 80)
     }
 
-    h3 {
+    .col-sm-4 {
       text-align: center;
       text-decoration: none;
     }
-    footer {
-      font-family: Oswald, arial black;
-      text-align: center;
-      min-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      margin-top: 50px;
+
+    .col-sm-4 h3 a {
+      color: inherit;
     }
-    .line-separator{
-      background: #c4c4c4;
-      height: 2px;
-      width: 800px;
-      margin-left: 180px;
-      min-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+
+    .col-sm-4 h3 a:hover {
+      color: rgb(255, 241, 55);
     }
-    #social {
-      padding-left: 7px;
+
+    #rowOne {
+      margin-bottom: 70px;
     }
+
+    #rowTwo {
+      margin-bottom: 50px;
+    }
+
+/*nav bar css*/
     .menu-wrap {
       margin-left: auto;
       margin-right: auto;
@@ -101,7 +103,6 @@
     }
     .menu {
       display: inline;
-      font-family: oswald, arial black;
       font-size: 8px;
     }
     .menu a {
@@ -175,11 +176,38 @@
       width: 107px;
       padding-left: 25px;
     }
-    .col-sm-4 h3 a {
-      color: inherit;
+
+/*footer css*/
+    footer {
+      text-align: center;
+      min-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 50px;
     }
-    .col-sm-4 h3 a:hover {
-      color: rgb(227, 213, 32);
+    .line-separator{
+      background: #c4c4c4;
+      height: 2px;
+      width: 800px;
+      margin-left: 180px;
+      min-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #social {
+      padding-left: 7px;
+    }
+    footer > p {
+      margin-top: 10px;
+    }
+    #social-icons{
+      margin-top: 20px;
+    }
+    #rights {
+      font-size: 11px;
+      color: rgb(186, 186, 186);
+      margin-top: 30px;
     }
   </style>
   </head>
@@ -226,20 +254,20 @@
       <div class="col-sm-4">
         <img id="cover" src="./image/resume-icon.jpg" alt="placeholder" />
         <h3>Resume</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p> -->
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/portfolio-icon.jpg" alt="placeholder" />
         <h3>Portfolio</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p> -->
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/freelance-icon.jpg" alt="placeholder" />
         <h3>Freelance</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p> -->
       </div>
     </div>
     <div class="heading">
@@ -249,20 +277,17 @@
       <div class="col-sm-4">
         <img id="cover" src="./image/me-icon.jpg" alt="placeholder" />
         <h3>About Me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <p>Currently in: San Francisco Bay Area, CA</p>
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/jetset-icon.jpg" alt="placeholder" />
         <h3><a href="jetset/index.html">Jetset</a></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <p>Planning a trip? Would love to share my personal travel notepad with you!</p>
       </div>
       <div class="col-sm-4">
         <img id="cover" src="./image/ga-icon.jpg" alt="placeholder" />
         <h3 id="links"><a href="ga.html" target="_blank">GA FEWD Course</a></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <p>The building blocks of my front-end web development skill.</p>
       </div>
     </div>
   </main>
@@ -270,7 +295,7 @@
 <footer>
   <div class="line-separator"></div>
   <p>Connect with Jennifer</p>
-  <div>
+  <div id="social-icons">
     <a href="https://www.linkedin.com/in/jennifershumanchang" target="_blank">
       <img title="linkedin" src="./image/linkedin.png" alt="linkedin" width="35" height="35"></a>
     <a href="https://www.facebook.com/jennifer.shumann" target="_blank">
@@ -279,5 +304,9 @@
       <img id="social" title="Instagram" src="./image/instagram.png" alt="Instagram" width="40" height="35"></a>
     <a href="mailto:jshumann@me.com">
       <img id="social" title="Email" src="./image/email.png" alt="Email" width="40" height="35"></a>
+  </div>
+  <div id="rights">
+    Designed by Jennifer Chang © 2015 All Rights Reserved
+  </div>
 </footer>
 </html>

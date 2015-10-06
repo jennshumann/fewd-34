@@ -52,8 +52,10 @@
       font-size: 30px;
       text-align: center;
       padding-top: 50px;
-      padding-bottom: 10px;
-    }
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 50px;
+      }
 
     .container {
       margin-top: 10px;
@@ -68,13 +70,9 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .heading {
-      font-size: 30px;
-      text-align: center;
-      margin-top: 20px;
-      padding-top: 50px;
-      padding-bottom: 10px;
 
+    main {
+      min-width: 1212px;
     }
 
     .container {
@@ -194,15 +192,27 @@
       padding-left: 25px;
     }
 
-/*footer css*/
-    footer {
-      text-align: center;
+    #main.line-separator{
+      background: #E6EBF0;
+      box-shadow:0 1px 1px #b5b5b5;
+      height: 1px;
+      width: 800px;
+      margin-left: 180px;
       min-width: 800px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px;
-      margin-top: 50px;
+      margin-top: 70px;
     }
+/*footer css*/
+    footer {
+      text-align: center;
+      min-width: 1212px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 150px;
+    }
+
     .line-separator{
       background: #c4c4c4;
       height: 2px;
@@ -228,23 +238,43 @@
     }
 
     /*testing carousel*/
-    .carousel.slide {
+    #carousel-example-generic-1, #carousel-example-generic-2 {
       width: 400px;
       height: 480px;
       margin-left: auto;
       margin-right: auto;
     }
+    #carousel-example-generic-3 {
+      width: 800px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+    .carousel-inner > .item > img {
+      margin: 0 auto;
+      background: cover;
+    }
     .carousel-control.left, .carousel-control.right {
       background-image: none;
     }
-    #portfolio-row {
+    #portfolio-row-pr {
+      width: 1000px;
       margin-left: auto;
       margin-right: auto;
     }
+    #portfolio-row-icebar {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     td {
       padding-left: 20px;
       padding-right: 30px;
+      width: 500px;
     }
+
     #text-box {
       font-size: 14px;
       width: 400px;
@@ -252,14 +282,22 @@
       margin-right: auto;
       margin-bottom: 20px;
     }
+    .sub {
+      font-size: 14px !important;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
     .subtitle {
       font-size: 18px;
       text-align: center;
-      margin-top: 70px;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
+
     .press.engagement {
-      width: 1050px;
+      width: 1000px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -272,6 +310,15 @@
 
     .LM-screen {
       border-radius: 5px;
+    }
+
+    h3 {
+      font-size: 12px;
+        }
+
+    .icebar-paragraph {
+      text-align: center;
+      font-size: 18px;
     }
 
   </style>
@@ -310,13 +357,12 @@
   <main>
 
     <div class="heading">MARKETING & PUBLIC RELATIONS</div>
-    <p class="subtitle">Works for Le Meridien Taipei<br></br>
-      Led Editorial Collaborations</p>
+    <p class="subtitle">LE MERIDIEN TAIPEI 2012-2013<br></br>
+      [ Led Editorial Collaborations ]</p>
 <!-- Section Start -->
-<table id="portfolio-row">
+<table id="portfolio-row-pr">
   <tr>
   <td>
-    <div id="marie-claire">
     <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -433,7 +479,7 @@
 </td>
 </div>
 </table>
-<p class="subtitle">Press Engagement</p>
+<p class="subtitle">[ Press Engagement ]</p>
 <table class="press engagement">
   <tr>
     <td>
@@ -447,7 +493,7 @@
     </td>
   </tr>
 </table>
-<p class="subtitle">Visual Direction</p>
+<!-- <p class="subtitle">Visual Direction</p>
 <table class="visual direction">
   <tr>
     <td>
@@ -457,12 +503,101 @@
     <td>
     </td>
   </tr>
-</table>
-    <div class="heading">EVENT MANAGEMENT & OPERATION</div>
-      <p class="subtitle">ICEBAR 2012-2015</p>
+</table> -->
+<div id="main" class="line-separator"></div>
+    <div class="heading">EVENT MANAGEMENT
+      <p class="subtitle">ICEBAR</p>
+      <p class="sub">2012 Taichung/ 2013 Kaohsiung/ 2015 Taipei</p>
+      <p class="sub">Founded, Designed and Operated.</p>
+      </div>
+      <table id="portfolio-row-icebar">
+        <tr class="icebar-paragraph">
+          <td>
+        </td>
+      </tr>
+        <tr>
+        <td>
+          <div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="icebar/icebar-taipei.jpg" alt="..." width="420 px">
+          <div class="carousel-caption">
+              <h3></h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-1.jpg" alt="...">
+          <div class="carousel-caption">
+              <h3></h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-2.jpg" alt="...">
+          <div class="carousel-caption">
+              <h3></h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-3.jpg" alt="...">
+          <div class="carousel-caption">
+              <h3></h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-skyy.jpg" alt="...">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-snow.jpg" alt="...">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+        </div>
+        <div class="item">
+          <img src="icebar/icebar-taipei-5.jpg" alt="...">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic-3" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic-3" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      </div>
+        <div id="text-box">
+          <p>Icebar constructed by a team of Harbin ice sculptors, proudly sponsored by Skyy Vodka and Snow Leopard Vodka for 3 consecutive years.</p>
+        </div>
+      </div>
+      </td>
+      <tr>
+        <td class="subtitle">[ Press ]
+        </td>
+      </tr>
+    </table>
   </main>
 </body>
+
+
+
 <footer>
   <div class="line-separator"></div>
   <p>Connect with Jennifer</p>
@@ -481,16 +616,13 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
 <script>
     jQuery(document).ready(function ($) {
         var options = {
-            ..
         };
 
         $("#slider1_container").css("display", "block");
         var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-        ...
     });
 </script>
 
